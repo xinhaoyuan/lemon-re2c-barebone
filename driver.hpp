@@ -36,14 +36,12 @@ int tokenizer_fill(TokenizerState &ts, int n);
 // PARSER =====================================================
 
 struct ast_node_s {
-    // fill your on content
+    // fill your content
 };
 
 struct ASTParserState {
     int error;
-    // allocation pool
     std::vector<ast_node_s *> pool;
-    // result
     ast_node_s *result;
 };
 
